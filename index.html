@@ -19,6 +19,20 @@
       video.play();
   });
  }
+
+ window.onresize = function () {
+    windowSize();
+}
+
+document.onreadystatechange = function () {
+    windowSize();
+    RestCountriesByFetch();
+}
+
+ async function windowSize() {
+    document.getElementById('video').style.height = (window.innerHeight - 75) + 'px';
+    document.getElementById('video').style.overflow = scroll;
+}
 </script>
 
 </body>
