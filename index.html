@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<video id="video" width="1280" height="768" controls></video>
+<video id="video" style="height:auto;overflow:auto;" controls></video>
 
 <script>
   if(Hls.isSupported()) {
@@ -20,17 +20,16 @@
   });
  }
 
- window.onresize = function () {
+window.onresize = function () {
     windowSize();
 }
 
 document.onreadystatechange = function () {
     windowSize();
-    RestCountriesByFetch();
 }
 
  async function windowSize() {
-    document.getElementById('video').style.height = (window.innerHeight - 75) + 'px';
+    document.getElementById('video').style.height = (window.innerHeight - 20) + 'px';
     document.getElementById('video').style.overflow = scroll;
 }
 </script>
