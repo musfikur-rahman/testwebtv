@@ -20,7 +20,7 @@ self.addEventListener('install', e => {
             })
             .then(() => self.skipWaiting())
     );
-})
+});
 
 // Call Active Event
 self.addEventListener('activate', e => {
@@ -39,10 +39,10 @@ self.addEventListener('activate', e => {
             )
         })
     )
-})
+});
 
 // Call Fetch Event
 self.addEventListener('fetch', e => {
     console.log('Service Worker: Fetching');
     e.respondWith(fetch(e.request).catch(() => caches.match(e.request)));
-})
+});
