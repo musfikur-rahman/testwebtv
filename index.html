@@ -3,15 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="009578">
 <title>IPTV</title>
 <script src="hls.min.js"></script>
-<link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="independent-tv.png">
-
 </head>
+
 <body>
+
 <video id="video" style="height:auto;width:auto;overflow:auto;" controls></video>
+
 <script>
 if(Hls.isSupported()) {
     var video = document.getElementById('video');
@@ -35,6 +34,6 @@ async function windowSize() {
 }
 
 </script>
-<script src="index.js"></script>
+
 </body>
 </html>
