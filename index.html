@@ -3,21 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <title>IPTV</title>
-<script src="hls.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>-->
+<script src="hls.js@latest"></script>
 <link rel="manifest" href="manifest.webmanifest">
 </head>
-
 <body>
-
 <video id="video" style="height:auto;width:auto;overflow:auto;" controls></video>
 
 <script>
+
 if(Hls.isSupported()) {
     var video = document.getElementById('video');
     var hls = new Hls();
     hls.loadSource('https://tempinfobase.jagobd.com:444/cZVydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZT00U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/channel24-sg-e8e.stream/chunks.m3u8');
     hls.attachMedia(video);
- }
+    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+        video.play();
+    });
+}
 
 window.onresize = function () {
     windowSize();
@@ -34,6 +37,7 @@ async function windowSize() {
 }
 
 </script>
+
 <script src="index.js" type="module"></script>
 </body>
 </html>
