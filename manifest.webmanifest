@@ -1,6 +1,7 @@
 {
     "name": "IPTV",
     "short_name": "IPTV",
+    "id": "index.html",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#fff",
