@@ -1,9 +1,9 @@
-const cacheName = 'v4';
+const cacheName = 'v5';
 const staticAssets = [
   'index.html',
   'index.js',
   'hls.min.js',
-  'manifest.webmanifest'
+  'manifest.json'
 ];
 
 self.addEventListener('install', async e => {
