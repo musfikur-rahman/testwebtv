@@ -1,4 +1,4 @@
-const cacheName = 'v6';
+const cacheName = 'v1';
 const staticAssets = [
   'hls.min.js',
   'index.html',
