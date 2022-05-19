@@ -3,7 +3,7 @@ const staticAssets = [
   'index.html',
   'index.js',
   'hls.min.js',
-  'manifest.json'
+  'manifest.webmanifest'
 ];
 
 self.addEventListener('install', async e => {
