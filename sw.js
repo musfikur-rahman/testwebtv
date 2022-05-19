@@ -1,6 +1,6 @@
 const cacheName = 'v1';
 const staticAssets = [
-  'hls.min.js',
+  'hls.js@latest',
   'index.html',
   'index.js',
   'logo192.png',
