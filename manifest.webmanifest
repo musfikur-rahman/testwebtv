@@ -2,7 +2,7 @@
     "name": "PWA IPTV",
     "short_name": "IPTV",
     "id": "index.html",
-    "start_url": "https://musfikur-rahman.github.io/testwebtv/index.html",
+    "start_url": "index.html",
     "display": "standalone",
     "theme_color": "#B12A34",
     "background_color": "#B12A34",
