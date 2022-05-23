@@ -48,6 +48,5 @@ if(Hls.isSupported()) {
   
   hls.on(Hls.Events.MANIFEST_PARSED,function() {
       video.play();
-  });
-  
+  });  
 }
