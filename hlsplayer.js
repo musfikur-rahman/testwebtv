@@ -1,12 +1,12 @@
-var url_1 = 'http://103.55.144.46/hls/Gazi-TV.m3u8';
-var url_2 = 'http://172.16.128.250:8081/live/gazitv/chunks.m3u8';
-var url_3 = 'http://103.55.144.46/hls/t-sports.m3u8';
-var url_4 = 'https://tempinfobase.jagobd.com:444/cZVydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZT00U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/titash.stream/chunks.m3u8';
+var url_1 = 'aHR0cDovLzEwMy41NS4xNDQuNDYvaGxzL0dhemktVFYubTN1OA==';
+var url_2 = 'aHR0cDovLzE3Mi4xNi4xMjguMjUwOjgwODEvbGl2ZS9nYXppdHYvY2h1bmtzLm0zdTg=';
+var url_3 = 'aHR0cDovLzEwMy41NS4xNDQuNDYvaGxzL3Qtc3BvcnRzLm0zdTg=';
+var url_4 = 'aHR0cHM6Ly90ZW1waW5mb2Jhc2UuamFnb2JkLmNvbTo0NDQvY1pWeWRtVnlYOFJwYkVVOU1pOHhOeTh5TURFMEdJRFU2Umd6UTZOVEFnZEVvYWVGemJGOTJZV3hJWlQwMFUwZXpOMUl6TXlmdmNHVk1aRUpDVEVGV2VWTjNQVE9tZEZzYVdSdGFXNTFhaVBoblBUSS90aXRhc2guc3RyZWFtL2NodW5rcy5tM3U4';
 
 if (Hls.isSupported()) {
   var video = document.getElementById('video');
   var hls = new Hls();
-  hls.loadSource(url_4);
+  hls.loadSource(atob(url_4));
   hls.attachMedia(video);
   hls.on(Hls.Events.MANIFEST_PARSED,function() {
     video.play();
