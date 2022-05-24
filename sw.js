@@ -1,12 +1,17 @@
 const cacheName = 'v3';
 const staticAssets = [
-  'hls.js@latest',
+  'favicon.ico',
+  'hsplayer.js',
   'index.html',
   'index.js',
   'logo192.png',
   'logo512.png',
   'manifest.webmanifest',
-  'sw.js'
+  'reset.css',
+  'sw.js',
+  'w3css4.css',
+  'web.config',
+  'windowsetup.js'
 ];
 
 self.addEventListener('install', async e => {
