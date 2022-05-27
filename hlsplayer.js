@@ -10,15 +10,16 @@ videomodal.style.display='none';
 spanmodal.style.display='none';
 spanmodal.className='w3-button w3-display-topright w3-red';
 
-document.getElementById("ch01").onclick = function() { hlsplayer(url_5); videomodaldisplay(); }
-document.getElementById("ch02").onclick = function() { hlsplayer(url_4); videomodaldisplay(); }
+document.getElementById("ch01").onclick = function() { hlsplayerplay(url_5); videomodaldisplay(); }
+document.getElementById("ch02").onclick = function() { hlsplayerplay(url_4); videomodaldisplay(); }
 
 spanmodal.onclick = function(){
   videomodal.style.display='none';
   spanmodal.style.display='none';
+  document.getElementById('video').src='';
 }
 
-async function hlsplayer(urlsrc){
+async function hlsplayerplay(urlsrc){
   if (Hls.isSupported()) {
     var video = document.getElementById('video');
     var hls = new Hls();
@@ -38,5 +39,5 @@ async function videomodaldisplay(){
   videomodal.style.right='0';
   videomodal.style.top='0';
   videomodal.style.bottom='0';
-  videomodal.style.background='white';  
+  videomodal.style.background='white';
 }
