@@ -20,26 +20,5 @@
   <!--<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.1.5-0.canary.8383/hls.min.js"></script>
   <script src="hlsplayer.js" type="module"></script>
-  <script>
-    var ch01 = document.getElementById("ch01");
-    var videomodal = document.getElementById("video-modal");
-    var spanmodal = document.getElementById("span-modal");
-    var video = document.getElementById("video");
-    videomodal.style.display='none';
-    spanmodal.className='w3-button w3-display-topright w3-red';
-    ch01.onclick = function() {
-      videomodal.style.display='block';
-      videomodal.style.position='absolute';
-      videomodal.style.left='0';
-      videomodal.style.right='0';
-      videomodal.style.top='0';
-      videomodal.style.bottom='0';
-      videomodal.style.background='white';
-    }
-    spanmodal.onclick = function(){
-      videomodal.style.display='none';
-    }
-
-  </script>
 </body>
 </html>
