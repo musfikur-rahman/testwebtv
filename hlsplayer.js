@@ -13,3 +13,21 @@ if (Hls.isSupported()) {
     video.play();
   });  
 }
+
+var ch01 = document.getElementById("ch01");
+var videomodal = document.getElementById("video-modal");
+var spanmodal = document.getElementById("span-modal");
+videomodal.style.display='none';
+spanmodal.className='w3-button w3-display-topright w3-red';
+ch01.onclick = function() {
+  videomodal.style.display='block';
+  videomodal.style.position='absolute';
+  videomodal.style.left='0';
+  videomodal.style.right='0';
+  videomodal.style.top='0';
+  videomodal.style.bottom='0';
+  videomodal.style.background='white';
+}
+spanmodal.onclick = function(){
+  videomodal.style.display='none';
+}
