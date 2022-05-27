@@ -9,21 +9,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="w3-container">
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">T-Sports</button>  
-    <div id="id01" class="w3-modal-full">
-      <div class="w3-modal-content-full">        
-          <span style="z-index:2" onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright w3-red">&times;</span>
-          <div>
-            <video id="video" controls="controls" autoplay="autoplay"></video>
-          </div>
-      </div>
-    </div>
+  <button id="ch01" class="w3-button w3-blue">T-Sports</button>
+  <div id="video-modal">
+    <span id="span-modal" style="z-index:2;">&times;</span>
+    <video id="video" controls="controls" autoplay="autoplay" style="z-index:1;"></video>
   </div>
+
   <script src="index.js" type="module"></script>
   <script src="windowsetup.js" type="module"></script>
   <!--<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.1.5-0.canary.8383/hls.min.js"></script>
   <script src="hlsplayer.js" type="module"></script>
+  <script>
+    var ch01 = document.getElementById("ch01");
+    var videomodal = document.getElementById("video-modal");
+    var spanmodal = document.getElementById("span-modal");
+    var video = document.getElementById("video");
+    videomodal.style.display='none';
+    spanmodal.className='w3-button w3-display-topright w3-red';
+    ch01.onclick = function() {
+      videomodal.style.display='block';
+      videomodal.style.position='absolute';
+      videomodal.style.left='0';
+      videomodal.style.right='0';
+      videomodal.style.top='0';
+      videomodal.style.bottom='0';
+      videomodal.style.background='white';
+    }
+    spanmodal.onclick = function(){
+      videomodal.style.display='none';
+    }
+
+  </script>
 </body>
 </html>
