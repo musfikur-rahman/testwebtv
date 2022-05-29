@@ -10,6 +10,7 @@ var url_8 = 'hdG5tdXNpYy5zdHJlYW0vY2h1bmtzLm0zdTg=';
 var url_9 = 'hdG53cy1zZy5zdHJlYW0vY2h1bmtzLm0zdTg=';
 var url_10 = 'iYW5nbGEyMXR2MDAwODg5OTU2LXNnLnN0cmVhbS9jaHVua3MubTN1OA==';
 var url_11 = 'iYW5nbGF2MDAwLnN0cmVhbS9jaHVua3MubTN1OA==';
+var url_12 = 'iaWpveTAwLnN0cmVhbS9jaHVua3MubTN1OA==';
 
 var mainpage = document.getElementById("main-page");
 var modalpage = document.getElementById("modal-page");
@@ -52,3 +53,4 @@ document.getElementById("ch8").onclick = function() { hlsplayerplay(url_start.co
 document.getElementById("ch9").onclick = function() { hlsplayerplay(url_start.concat(url_9)); videomodaldisplay(); }
 document.getElementById("ch10").onclick = function() { hlsplayerplay(url_start.concat(url_10)); videomodaldisplay(); }
 document.getElementById("ch11").onclick = function() { hlsplayerplay(url_start.concat(url_11)); videomodaldisplay(); }
+document.getElementById("ch12").onclick = function() { hlsplayerplay(url_start.concat(url_12)); videomodaldisplay(); }
