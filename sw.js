@@ -1,4 +1,4 @@
-const cacheName = 'v3';
+const cacheName = 'v4';
 const staticAssets = [
   'favicon.ico',
   'hsplayer.js',
@@ -8,8 +8,8 @@ const staticAssets = [
   'logo512.png',
   'manifest.webmanifest',
   'reset.css',
+  'style.css',
   'sw.js',
-  'w3css4.css',
   'web.config',
   'windowsetup.js'
 ];
