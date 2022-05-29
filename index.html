@@ -9,10 +9,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input id="ch01" type="image" src="https://musfikur-rahman.github.io/iptv/logo/atn-bangla-tv.jpg" style="height:152px;width:152px;" />
-  <input id="ch02" type="image" src="https://musfikur-rahman.github.io/iptv/logo/tsports-tv.jpg" style="height:152px;width:152px;" />
-  <span id="span-modal" style="z-index:2;">&times;</span>
-  <video id="video" controls="controls" autoplay="autoplay" style="z-index:1;"></video>
+  <div id="main-page">
+    <input id="ch01" type="image" src="https://musfikur-rahman.github.io/iptv/logo/tsports-tv.jpg" style="height:152px;width:152px;" />
+    <input id="ch02" type="image" src="https://musfikur-rahman.github.io/iptv/logo/atn-bangla-tv.jpg" style="height:152px;width:152px;" />
+  </div>
+  <div id="modal-page">
+    <span id="close-button" style="z-index:2;" class="w3-button w3-display-topright w3-red">&times;</span>  
+    <video id="video" controls="controls" autoplay="autoplay" style="z-index:1;" class="w3-display-middle"></video>
+  </div>
   <script src="index.js" type="module"></script>
   <script src="windowsetup.js" type="module"></script>
   <!--<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>-->
