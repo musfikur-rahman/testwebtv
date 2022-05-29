@@ -11,6 +11,9 @@ var url_9 = 'hdG53cy1zZy5zdHJlYW0vY2h1bmtzLm0zdTg=';
 var url_10 = 'iYW5nbGEyMXR2MDAwODg5OTU2LXNnLnN0cmVhbS9jaHVua3MubTN1OA==';
 var url_11 = 'iYW5nbGF2MDAwLnN0cmVhbS9jaHVua3MubTN1OA==';
 var url_12 = 'iaWpveTAwLnN0cmVhbS9jaHVua3MubTN1OA==';
+var url_13 = 'iYW5nbGF0dmhkLnN0cmVhbS9jaHVua3MubTN1OA==';
+var url_14 = 'iaXN3YWJhbmdsYXR2LnN0cmVhbS9jaHVua3MubTN1OA==';
+var url_15 = 'ib2lzaGFraGl0di1vcmcuc3RyZWFtL2NodW5rcy5tM3U4';
 
 var mainpage = document.getElementById("main-page");
 var modalpage = document.getElementById("modal-page");
@@ -54,3 +57,6 @@ document.getElementById("ch9").onclick = function() { hlsplayerplay(url_start.co
 document.getElementById("ch10").onclick = function() { hlsplayerplay(url_start.concat(url_10)); videomodaldisplay(); }
 document.getElementById("ch11").onclick = function() { hlsplayerplay(url_start.concat(url_11)); videomodaldisplay(); }
 document.getElementById("ch12").onclick = function() { hlsplayerplay(url_start.concat(url_12)); videomodaldisplay(); }
+document.getElementById("ch13").onclick = function() { hlsplayerplay(url_start.concat(url_13)); videomodaldisplay(); }
+document.getElementById("ch14").onclick = function() { hlsplayerplay(url_start.concat(url_14)); videomodaldisplay(); }
+document.getElementById("ch15").onclick = function() { hlsplayerplay(url_start.concat(url_15)); videomodaldisplay(); }
