@@ -4,19 +4,25 @@ var url_3 = 'aHR0cDovLzEwMy41NS4xNDQuNDYvaGxzL3Qtc3BvcnRzLm0zdTg=';
 var url_4 = 'aHR0cHM6Ly90ZW1waW5mb2Jhc2UuamFnb2JkLmNvbTo0NDQvY1pWeWRtVnlYOFJwYkVVOU1pOHhOeTh5TURFMEdJRFU2Umd6UTZOVEFnZEVvYWVGemJGOTJZV3hJWlQwMFUwZXpOMUl6TXlmdmNHVk1aRUpDVEVGV2VWTjNQVE9tZEZzYVdSdGFXNTFhaVBoblBUSS90aXRhc2guc3RyZWFtL2NodW5rcy5tM3U4';
 var url_5 = 'aHR0cHM6Ly90ZW1waW5mb2Jhc2UuamFnb2JkLmNvbTo0NDQvY1pWeWRtVnlYOFJwYkVVOU1pOHhOeTh5TURFMEdJRFU2Umd6UTZOVEFnZEVvYWVGemJGOTJZV3hJWlQwMFUwZXpOMUl6TXlmdmNHVk1aRUpDVEVGV2VWTjNQVE9tZEZzYVdSdGFXNTFhaVBoblBUSS9hdG5iZC04LW9yZy5zdHJlYW0vY2h1bmtzLm0zdTg=';
 
-var videomodal = document.getElementById("video");
-var spanmodal = document.getElementById("span-modal");
-videomodal.style.display='none';
-spanmodal.style.display='none';
-spanmodal.className='w3-button w3-display-topright w3-red';
+var mainpage = document.getElementById("main-page");
+var modalpage = document.getElementById("modal-page");
+var videodisplay = document.getElementById("video");
+var closebutton = document.getElementById("close-button");
+modalpage.style.display='none';
 
-document.getElementById("ch01").onclick = function() { hlsplayerplay(url_5); videomodaldisplay(); }
-document.getElementById("ch02").onclick = function() { hlsplayerplay(url_4); videomodaldisplay(); }
+document.getElementById("ch01").onclick = function() { hlsplayerplay(url_4); videomodaldisplay(); }
+document.getElementById("ch02").onclick = function() { hlsplayerplay(url_5); videomodaldisplay(); }
 
-spanmodal.onclick = function(){
-  videomodal.style.display='none';
-  spanmodal.style.display='none';
+closebutton.onclick = function(){
+  modalpage.style.display='none';
+  mainpage.style.display='block';
   document.getElementById('video').src='';
+}
+
+async function videomodaldisplay(){
+  mainpage.style.display='none';
+  modalpage.style.display='block';
+  videomodal.style.background='white';
 }
 
 async function hlsplayerplay(urlsrc){
@@ -29,15 +35,4 @@ async function hlsplayerplay(urlsrc){
       video.play();
     });  
   }
-}
-
-async function videomodaldisplay(){
-  videomodal.style.display='block';
-  spanmodal.style.display='block';
-  videomodal.style.position='absolute';
-  videomodal.style.left='0';
-  videomodal.style.right='0';
-  videomodal.style.top='0';
-  videomodal.style.bottom='0';
-  videomodal.style.background='white';
 }
