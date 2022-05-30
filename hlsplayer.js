@@ -17,7 +17,6 @@ var url_15 = 'ib2lzaGFraGl0di1vcmcuc3RyZWFtL2NodW5rcy5tM3U4';
 
 var mainpage = document.getElementById("main-page");
 var modalpage = document.getElementById("modal-page");
-var videodisplay = document.getElementById("video");
 var closebutton = document.getElementById("close-button");
 modalpage.style.display='none';
 
@@ -30,7 +29,7 @@ closebutton.onclick = function(){
 async function videomodaldisplay(){
   mainpage.style.display='none';
   modalpage.style.display='block';
-  videomodal.style.background='white';
+  modalpage.style.background='white';
 }
 
 async function hlsplayerplay(urlsrc){
