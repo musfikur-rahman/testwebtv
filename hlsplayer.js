@@ -21,8 +21,8 @@ var closebutton = document.getElementById("close-button");
 modalpage.style.display='none';
 
 closebutton.onclick = function(){
-  modalpage.style.display='none';
   mainpage.style.display='block';
+  modalpage.style.display='none';
   document.getElementById('video').src='';
 }
 
