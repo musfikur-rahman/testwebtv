@@ -13,6 +13,8 @@ var btvctg = 'ib2lzaGFraGlwbHVzLnN0cmVhbS9jaHVua3MubTN1OA==';
 var btvworld = 'idHZiZC1vZmZpY2Utc2cuc3RyZWFtL2NodW5rcy5tM3U4';
 var canbangla = 'jYW5iYW5nbGF0di5zdHJlYW0vY2h1bmtzLm0zdTg=';
 var channel9 = 'jaGFubmVsOWhkLnN0cmVhbS9jaHVua3MubTN1OA==';
+var channelsuk = 'jaHN1a29mZi5zdHJlYW0vY2h1bmtzLm0zdTg=';
+var channeli = 'jaGFubmVsaS04LW9yZy5zdHJlYW0vY2h1bmtzLm0zdTg=';
 var data = '';
 var data = '';
 
@@ -59,5 +61,7 @@ document.getElementById("btvctg").onclick = function() { hlsplayerplay(url_start
 document.getElementById("btvworld").onclick = function() { hlsplayerplay(url_start.concat(btvworld)); videomodaldisplay(); }
 document.getElementById("canbangla").onclick = function() { hlsplayerplay(url_start.concat(canbangla)); videomodaldisplay(); }
 document.getElementById("channel9").onclick = function() { hlsplayerplay(url_start.concat(channel9)); videomodaldisplay(); }
+document.getElementById("channelsuk").onclick = function() { hlsplayerplay(url_start.concat(channelsuk)); videomodaldisplay(); }
+document.getElementById("channeli").onclick = function() { hlsplayerplay(url_start.concat(channeli)); videomodaldisplay(); }
 document.getElementById("").onclick = function() { hlsplayerplay(url_start.concat(data)); videomodaldisplay(); }
 document.getElementById("").onclick = function() { hlsplayerplay(url_start.concat(data)); videomodaldisplay(); }
