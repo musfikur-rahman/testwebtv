@@ -8,6 +8,13 @@ var bangla21 = 'iYW5nbGEyMXR2MDAwODg5OTU2LXNnLnN0cmVhbS9jaHVua3MubTN1OA==';
 var banglavision = 'iYW5nbGF2MDAwLnN0cmVhbS9jaHVua3MubTN1OA==';
 var banglatv = 'iYW5nbGF0dmhkLnN0cmVhbS9jaHVua3MubTN1OA==';
 var boishakhitv = 'ib2lzaGFraGl0di1vcmcuc3RyZWFtL2NodW5rcy5tM3U4';
+var boishakhitvplus = 'ib2lzaGFraGlwbHVzLnN0cmVhbS9jaHVua3MubTN1OA==';
+var btvctg = 'ib2lzaGFraGlwbHVzLnN0cmVhbS9jaHVua3MubTN1OA==';
+var btvworld = 'idHZiZC1vZmZpY2Utc2cuc3RyZWFtL2NodW5rcy5tM3U4';
+var canbangla = 'jYW5iYW5nbGF0di5zdHJlYW0vY2h1bmtzLm0zdTg=';
+var channel9 = 'jaGFubmVsOWhkLnN0cmVhbS9jaHVua3MubTN1OA==';
+var data = '';
+var data = '';
 
 var mainpage = document.getElementById("main-page");
 var modalpage = document.getElementById("modal-page");
@@ -47,3 +54,10 @@ document.getElementById("bangla21").onclick = function() { hlsplayerplay(url_sta
 document.getElementById("banglavision").onclick = function() { hlsplayerplay(url_start.concat(banglavision)); videomodaldisplay(); }
 document.getElementById("banglatv").onclick = function() { hlsplayerplay(url_start.concat(banglatv)); videomodaldisplay(); }
 document.getElementById("boishakhitv").onclick = function() { hlsplayerplay(url_start.concat(boishakhitv)); videomodaldisplay(); }
+document.getElementById("boishakhitvplus").onclick = function() { hlsplayerplay(url_start.concat(boishakhitvplus)); videomodaldisplay(); }
+document.getElementById("btvctg").onclick = function() { hlsplayerplay(url_start.concat(btvctg)); videomodaldisplay(); }
+document.getElementById("btvworld").onclick = function() { hlsplayerplay(url_start.concat(btvworld)); videomodaldisplay(); }
+document.getElementById("canbangla").onclick = function() { hlsplayerplay(url_start.concat(canbangla)); videomodaldisplay(); }
+document.getElementById("channel9").onclick = function() { hlsplayerplay(url_start.concat(channel9)); videomodaldisplay(); }
+document.getElementById("").onclick = function() { hlsplayerplay(url_start.concat(data)); videomodaldisplay(); }
+document.getElementById("").onclick = function() { hlsplayerplay(url_start.concat(data)); videomodaldisplay(); }
