@@ -18,6 +18,12 @@ var channeli = 'jaGFubmVsaS04LW9yZy5zdHJlYW0vY2h1bmtzLm0zdTg=';
 var cumilla24 = 'jdW1pbGxhMjQuc3RyZWFtL2NodW5rcy5tM3U4';
 var dbcnews = 'kYmNuZXdzLnN0cmVhbS9jaHVua3MubTN1OA==';
 var doyeltvcanada = 'kb3llbHR2LnN0cmVhbS9jaHVua3MubTN1OA==';
+var dwnews = 'kd25ld3Muc3RyZWFtL2NodW5rcy5tM3U4';
+var gaanbangla = 'nYWFuYmFuZ2xhLTgtb3JnZC5zdHJlYW0vY2h1bmtzLm0zdTg=';
+var independenttv = 'pbmRlcGVuZGVudC04LW9yZy5zdHJlYW0vY2h1bmtzLm0zdTg=';
+var jamunatv = 'qYW11bmEtdGVzdC1zYW1wbGUtb2suc3RyZWFtL2NodW5rcy5tM3U4';
+var mohonatv = 'tb2hvbmF0djAwMDAwMjIzMjMyMjQ0NTU2NjMzLnN0cmVhbS9jaHVua3MubTN1OA==';
+var nantv = 'uYW50di5zdHJlYW0vY2h1bmtzLm0zdTg=';
 
 var mainpage = document.getElementById("main-page");
 var modalpage = document.getElementById("modal-page");
@@ -67,3 +73,9 @@ document.getElementById("channeli").onclick = function() { hlsplayerplay(url_sta
 document.getElementById("cumilla24").onclick = function() { hlsplayerplay(url_start.concat(cumilla24)); videomodaldisplay(); }
 document.getElementById("dbcnews").onclick = function() { hlsplayerplay(url_start.concat(dbcnews)); videomodaldisplay(); }
 document.getElementById("doyeltvcanada").onclick = function() { hlsplayerplay(url_start.concat(doyeltvcanada)); videomodaldisplay(); }
+document.getElementById("dwnews").onclick = function() { hlsplayerplay(url_start.concat(dwnews)); videomodaldisplay(); }
+document.getElementById("gaanbangla").onclick = function() { hlsplayerplay(url_start.concat(gaanbangla)); videomodaldisplay(); }
+document.getElementById("independenttv").onclick = function() { hlsplayerplay(url_start.concat(independenttv)); videomodaldisplay(); }
+document.getElementById("jamunatv").onclick = function() { hlsplayerplay(url_start.concat(jamunatv)); videomodaldisplay(); }
+document.getElementById("mohonatv").onclick = function() { hlsplayerplay(url_start.concat(mohonatv)); videomodaldisplay(); }
+document.getElementById("nantv").onclick = function() { hlsplayerplay(url_start.concat(nantv)); videomodaldisplay(); }
