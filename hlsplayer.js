@@ -1,5 +1,9 @@
 var url_start = 'aHR0cHM6Ly90ZW1waW5mb2Jhc2UuamFnb2JkLmNvbTo0NDQvY1pWeWRtVnlYOFJwYkVVOU1pOHhOeTh5TURFMEdJRFU2Umd6UTZOVEFnZEVvYWVGemJGOTJZV3hJWlQwMFUwZXpOMUl6TXlmdmNHVk1aRUpDVEVGV2VWTjNQVE9tZEZzYVdSdGFXNTFhaVBoblBUSS9';
 var tsports1 = '0aXRhc2guc3RyZWFtL2NodW5rcy5tM3U4';
+var adsports1 = 'aHR0cHM6Ly9hZG1kbjEuY2RuLm1hbmdvbW9sby5jb20vYWRzcG9ydHMxL3NtaWw6YWRzcG9ydHMxLnN0cmVhbS5zbWlsL2NodW5rbGlzdF9iMTgwMDAwMF90NjROekl3Y0E9PS5tM3U4';
+var adsports2 = 'aHR0cHM6Ly9hZG1kbjUuY2RuLm1hbmdvbW9sby5jb20vYWRzcG9ydHMyL3NtaWw6YWRzcG9ydHMyLnN0cmVhbS5zbWlsL2NodW5rbGlzdF9iMTgwMDAwMF90NjROekl3Y0E9PS5tM3U4';
+var adsports3 = 'aHR0cHM6Ly9hZG1kbjN0YS5jZG4ubWFuZ29tb2xvLmNvbS9hZHNwb3J0czMvc21pbDphZHNwb3J0czMuc3RyZWFtLnNtaWwvY2h1bmtsaXN0X2I0MDAwMDAwX3Q2NE1UQTRNSEE9Lm0zdTg=';
+var adsports4 = 'aHR0cDovL2FkbWRuNC5jZG4ubWFuZ29tb2xvLmNvbS9hZHNwb3J0czQvc21pbDphZHNwb3J0czQuc3RyZWFtLnNtaWwvY2h1bmtsaXN0X2I0MDAwMDAwX3Q2NE1UQTRNSEE9Lm0zdTg=';
 var anandatv = 'hbmFuZGF0di5zdHJlYW0vY2h1bmtzLm0zdTg=';
 var atnbangla = 'hdG5iZC04LW9yZy5zdHJlYW0vY2h1bmtzLm0zdTg=';
 var atnislamic = 'hdG5pc2xhbWljdHYuc3RyZWFtL2NodW5rcy5tM3U4';
@@ -28,16 +32,27 @@ var news24 = 'uZXdzMjRsb2NhbC5zdHJlYW0vY2h1bmtzLm0zdTg=';
 var royaltv = 'yb3lhbHR2LnN0cmVhbS9jaHVua3MubTN1OA==';
 var rtnews = 'ydG5ld3Muc3RyZWFtL2NodW5rcy5tM3U4';
 var somoinews = 'zb21veXQwMDAwMTEyMjY2MTU1NDQ1NDQuc3RyZWFtL2NodW5rcy5tM3U4';
+var thechanneltv = '0aGVjaGFubmVsdHYuc3RyZWFtL2NodW5rcy5tM3U4';
+var uatv = '1YXR2LnN0cmVhbS9jaHVua3MubTN1OA==';
+var varendratv = '2YXJlbmRyYXR2LnN0cmVhbS9jaHVua3MubTN1OA==';
+var voicetv = '2b2ljZXR2LnN0cmVhbS9jaHVua3MubTN1OA==';
+var Jonacktv = 'aHR0cDovL2Nkbi5zbWFydHN0cmVhbS52aWRlby9zbWFydHN0cmVhbS11cy9qb25ha2svam9uYWtrL3BsYXlsaXN0Lm0zdTg=';
+var bflixmovies = 'aHR0cHM6Ly9tLWMwMzYtajJhcHBzLnMubGxud2kubmV0L2hscy81MDQ1LkJGbGl4TW92aWVzLmluXzQ4MHAvaW5kZXgubTN1OA==';
+var manoranjanmovies = 'aHR0cHM6Ly9tLWMwMzYtajJhcHBzLnMubGxud2kubmV0L2hscy8yMTcyLk1hbm9yYW5qYW5Nb3ZpZXMuaW5fNDgwcC9pbmRleC5tM3U4';
+var dabangg = 'aHR0cDovL20tYzAxLWoyYXBwcy5zLmxsbndpLm5ldC9obHMvMDk1MC5EYWJhbmdnVFYuaW5fNDgwcC9pbmRleC5tM3U4';
+var ninexjalwa = 'aHR0cHM6Ly9tLWMwMS1qMmFwcHMucy5sbG53aS5uZXQvbGl2ZS8wNzgxLjlYSmFsd2EuaW5fNDgwcC9pbmRleC5tM3U4';
+var aajtak = 'aHR0cHM6Ly9hYWp0YWtsaXZlLWFtZC5ha2FtYWl6ZWQubmV0OjQ0My9obHMvbGl2ZS8yMDE0NDE2L2FhanRhay9hYWp0YWtsaXZlL2FhanRha18xL2NodW5rbGlzdC5tM3U4';
 
 var mainpage = document.getElementById("main-page");
 var modalpage = document.getElementById("modal-page");
 var closebutton = document.getElementById("close-button");
+var videoelement = document.getElementById('video');    
 modalpage.style.display='none';
 
 closebutton.onclick = function(){
   mainpage.style.display='block';
   modalpage.style.display='none';
-  document.getElementById('video').src='';
+  hlsplayerplay('');
 }
 
 async function videomodaldisplay(){
@@ -48,17 +63,20 @@ async function videomodaldisplay(){
 
 async function hlsplayerplay(urlsrc){
   if (Hls.isSupported()) {
-    var video = document.getElementById('video');
     var hls = new Hls();
     hls.loadSource(atob(urlsrc));
-    hls.attachMedia(video);
+    hls.attachMedia(videoelement);
     hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video.play();
-    });  
+      videoelement.play();
+    });
   }
 }
 
 document.getElementById("tsports1").onclick = function() { hlsplayerplay(url_start.concat(tsports1)); videomodaldisplay(); }
+document.getElementById("adsports1").onclick = function() { hlsplayerplay(adsports1); videomodaldisplay(); }
+document.getElementById("adsports2").onclick = function() { hlsplayerplay(adsports2); videomodaldisplay(); }
+document.getElementById("adsports3").onclick = function() { hlsplayerplay(adsports3); videomodaldisplay(); }
+document.getElementById("adsports4").onclick = function() { hlsplayerplay(adsports4); videomodaldisplay(); }
 document.getElementById("anandatv").onclick = function() { hlsplayerplay(url_start.concat(anandatv)); videomodaldisplay(); }
 document.getElementById("atnbangla").onclick = function() { hlsplayerplay(url_start.concat(atnbangla)); videomodaldisplay(); }
 document.getElementById("atnislamic").onclick = function() { hlsplayerplay(url_start.concat(atnislamic)); videomodaldisplay(); }
@@ -87,3 +105,13 @@ document.getElementById("news24").onclick = function() { hlsplayerplay(url_start
 document.getElementById("royaltv").onclick = function() { hlsplayerplay(url_start.concat(royaltv)); videomodaldisplay(); }
 document.getElementById("rtnews").onclick = function() { hlsplayerplay(url_start.concat(rtnews)); videomodaldisplay(); }
 document.getElementById("somoinews").onclick = function() { hlsplayerplay(url_start.concat(somoinews)); videomodaldisplay(); }
+document.getElementById("thechanneltv").onclick = function() { hlsplayerplay(url_start.concat(thechanneltv)); videomodaldisplay(); }
+document.getElementById("uatv").onclick = function() { hlsplayerplay(url_start.concat(uatv)); videomodaldisplay(); }
+document.getElementById("varendratv").onclick = function() { hlsplayerplay(url_start.concat(varendratv)); videomodaldisplay(); }
+document.getElementById("voicetv").onclick = function() { hlsplayerplay(url_start.concat(voicetv)); videomodaldisplay(); }
+document.getElementById("Jonacktv").onclick = function() { hlsplayerplay(Jonacktv); videomodaldisplay(); }
+document.getElementById("bflixmovies").onclick = function() { hlsplayerplay(bflixmovies); videomodaldisplay(); }
+document.getElementById("manoranjanmovies").onclick = function() { hlsplayerplay(manoranjanmovies); videomodaldisplay(); }
+document.getElementById("dabangg").onclick = function() { hlsplayerplay(dabangg); videomodaldisplay(); }
+document.getElementById("ninexjalwa").onclick = function() { hlsplayerplay(ninexjalwa); videomodaldisplay(); }
+document.getElementById("aajtak").onclick = function() { hlsplayerplay(aajtak); videomodaldisplay(); }
