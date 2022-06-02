@@ -53,10 +53,6 @@ closebutton.onclick = function(){
   mainpage.style.display='block';
   modalpage.style.display='none';
   hlsplayerplay('');
-  var hls = new Hls();
-  hls.on(Hls.Events.MANIFEST_PARSED,function() {
-    videoelement.pause();
-  });
 }
 
 async function videomodaldisplay(){
