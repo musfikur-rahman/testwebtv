@@ -1,5 +1,6 @@
 var url_start = 'aHR0cHM6Ly90ZW1waW5mb2Jhc2UuamFnb2JkLmNvbTo0NDQvY1pWeWRtVnlYOFJwYkVVOU1pOHhOeTh5TURFMEdJRFU2Umd6UTZOVEFnZEVvYWVGemJGOTJZV3hJWlQwMFUwZXpOMUl6TXlmdmNHVk1aRUpDVEVGV2VWTjNQVE9tZEZzYVdSdGFXNTFhaVBoblBUSS9';
-var tycsports = "aHR0cHM6Ly9kM2F3bmxncXowc3pheS5jbG91ZGZyb250Lm5ldC9vdXQvdjEvYjg0MWMzNjZjYmU1NDBlNmExMDZjM2JhODNlNWM4ZDYvaW5kZXhfOS5tM3U4"
+var tofeelive = "aHR0cHM6Ly9tcHJvZC1jZG4udG9mZmVlbGl2ZS5jb20vdG9mZmVlL2ZpZmEtZnJlZS9tYXRjaC0xL21hc3Rlcl8xMDAwLm0zdTg=";
+var tycsports = "aHR0cHM6Ly9kM2F3bmxncXowc3pheS5jbG91ZGZyb250Lm5ldC9vdXQvdjEvYjg0MWMzNjZjYmU1NDBlNmExMDZjM2JhODNlNWM4ZDYvaW5kZXhfOS5tM3U4";
 var adsports1 = 'aHR0cHM6Ly9hZG1kbjEuY2RuLm1hbmdvbW9sby5jb20vYWRzcG9ydHMxL3NtaWw6YWRzcG9ydHMxLnN0cmVhbS5zbWlsL2NodW5rbGlzdF9iMTgwMDAwMF90NjROekl3Y0E9PS5tM3U4';
 var adsports2 = 'aHR0cHM6Ly9hZG1kbjUuY2RuLm1hbmdvbW9sby5jb20vYWRzcG9ydHMyL3NtaWw6YWRzcG9ydHMyLnN0cmVhbS5zbWlsL2NodW5rbGlzdF9iMTgwMDAwMF90NjROekl3Y0E9PS5tM3U4';
 var adsports3 = 'aHR0cHM6Ly9hZG1kbjN0YS5jZG4ubWFuZ29tb2xvLmNvbS9hZHNwb3J0czMvc21pbDphZHNwb3J0czMuc3RyZWFtLnNtaWwvY2h1bmtsaXN0X2I0MDAwMDAwX3Q2NE1UQTRNSEE9Lm0zdTg=';
@@ -72,6 +73,7 @@ async function hlsplayerplay(urlsrc){
   }
 }
 
+document.getElementById("tofeelive").onclick = function() { hlsplayerplay(tofeelive); videomodaldisplay(); }
 document.getElementById("tycsports").onclick = function() { hlsplayerplay(tycsports); videomodaldisplay(); }
 document.getElementById("adsports1").onclick = function() { hlsplayerplay(adsports1); videomodaldisplay(); }
 document.getElementById("adsports2").onclick = function() { hlsplayerplay(adsports2); videomodaldisplay(); }
